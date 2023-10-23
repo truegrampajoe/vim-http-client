@@ -51,6 +51,8 @@ endfunction
 
 command! -nargs=0 HTTPClientDoRequest call <SID>DoHTTPRequest()
 
+au BufNewFile,BufRead *.rest set filetype=rest
+
 if g:http_client_bind_hotkey
   silent! nnoremap <unique> <Leader>tt :HTTPClientDoRequest<cr>
 endif
