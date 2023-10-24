@@ -11,11 +11,11 @@ syntax match value "\v\".*\""
 syntax match key "\v\".*\":"
 syntax match comment "\v^ *#.*" contains=varName
 
-highlight link httpMethod Function
-highlight link httpHeaderKey Tag
+highlight link httpMethod Statement
+highlight link httpHeaderKey Function
 highlight link uri String
 highlight link status Constant
-highlight link key Label
+highlight link key Tag
 highlight link value String
 highlight link varName Special
 
