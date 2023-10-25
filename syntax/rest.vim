@@ -17,6 +17,6 @@ highlight link uri String
 highlight link status Constant
 highlight link key jsonKeyword
 highlight link value jsonString
-highlight link varName Special
+highlight link varName Label
 
 let b:current_syntax = 'rest'
