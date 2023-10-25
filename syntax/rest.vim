@@ -11,12 +11,12 @@ syntax match value "\v\".*\""
 syntax match key "\v\".*\":"
 syntax match comment "\v^ *#.*" contains=varName
 
-highlight link httpMethod Statement
-highlight link httpHeaderKey Function
+highlight link httpMethod Tag
+highlight link httpHeaderKey String
 highlight link uri String
 highlight link status Constant
-highlight link key Tag
-highlight link value String
+highlight link key jsonKeyword
+highlight link value jsonString
 highlight link varName Special
 
 let b:current_syntax = 'rest'
